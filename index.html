@@ -1,384 +1,449 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bajo control, relaciones sin abuso</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/tailwindcss-browser@4"></script>
-  <link rel="stylesheet" href="./css/styles.css">
+  <title>Bajo control: relaciones sin abuso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;0,9..40,800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css.styles.css">
 </head>
 <body>
-  <header class="nav-top">
-    <div class="nav-inner">
-      <div class="font-bold tracking-wide text-[#3b2f27]">Bajo control, relaciones sin abuso</div>
-      <button class="menu-toggle" id="menuToggle" aria-expanded="false">☰ Menú</button>
-      <nav class="menu-links" id="menuLinks" aria-label="Navegación de la presentación">
-        <button data-slide="1" class="active">Inicio</button>
-        <button data-slide="2">Estructura</button>
-        <button data-slide="3">Realidad</button>
-        <button data-slide="4">Problema</button>
-        <button data-slide="5">Fundamentación</button>
-        <button data-slide="6">Contexto</button>
-        <button data-slide="7">Objetivos</button>
-        <button data-slide="8">Metodología</button>
-        <button data-slide="9">Actividades</button>
-        <button data-slide="10">Temporalización</button>
-        <button data-slide="11">Recursos</button>
-        <button data-slide="12">Evaluación</button>
-      </nav>
+
+<!-- ─── NAVBAR ─── -->
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo">Bajo control</span>
+    <button class="ham-btn" id="hamBtn" aria-label="Menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-menu" id="navMenu" role="menu">
+    <a href="#portada"       role="menuitem"><span class="num">★</span> Portada</a>
+    <a href="#realidad"      role="menuitem"><span class="num">1</span> Análisis de la realidad</a>
+    <a href="#fundamentacion" role="menuitem"><span class="num">2</span> Fundamentación</a>
+    <a href="#destinatarios" role="menuitem"><span class="num">3</span> Destinatarios</a>
+    <a href="#objetivos"     role="menuitem"><span class="num">4</span> Objetivos</a>
+    <a href="#metodologia"   role="menuitem"><span class="num">5</span> Metodología</a>
+    <a href="#actividades"   role="menuitem"><span class="num">6</span> Actividades</a>
+    <a href="#planificacion" role="menuitem"><span class="num">7</span> Planificación y recursos</a>
+    <a href="#evaluacion"    role="menuitem"><span class="num">8</span> Evaluación</a>
+  </div>
+</nav>
+
+<!-- ─── PORTADA ─── -->
+<section id="portada">
+  <div class="blob-wrap">
+    <div class="blob" style="width:440px;height:440px;top:-120px;right:-90px;background:#e7b48f;opacity:.24"></div>
+    <div class="blob" style="width:340px;height:340px;left:-80px;bottom:-90px;background:#c9dacd;opacity:.26;animation-duration:18s"></div>
+    <div class="blob" style="width:230px;height:230px;left:20%;top:16%;background:#f0d59f;opacity:.20;animation-duration:20s;animation-direction:reverse"></div>
+  </div>
+  <div class="inner" style="text-align:center">
+    <div class="hero-shape reveal" style="margin:0 auto 2rem"></div>
+    <p class="kicker reveal">Defensa del proyecto final de grado</p>
+    <h1 class="reveal" style="margin-top:.6rem">Bajo control:<br>relaciones sin abuso</h1>
+    <p class="lead reveal" style="margin:1.4rem auto 0">Educación afectivo-sexual para jóvenes con discapacidad intelectual</p>
+    <div class="pill-row reveal" style="justify-content:center">
+      <span class="pill">Monserrat Prieto Freixa</span>
+      <span class="pill">ASPRODES · Salamanca</span>
     </div>
-  </header>
+  </div>
+</section>
 
-  <div class="nav-spacer"></div>
+<!-- ─── 1. ANÁLISIS DE LA REALIDAD ─── -->
+<section id="realidad">
+  <div class="blob-wrap">
+    <div class="blob" style="width:300px;height:300px;top:-70px;left:-60px;background:#d4e0d8;opacity:.17;animation-duration:16s"></div>
+    <div class="blob" style="width:260px;height:260px;right:-50px;bottom:-60px;background:#efc6ac;opacity:.15;animation-duration:22s"></div>
+  </div>
+  <div class="inner">
+    <p class="kicker reveal">Punto de partida</p>
+    <h2 class="reveal">Análisis de la realidad</h2>
+    <p class="lead reveal" style="margin-top:1rem">El proyecto nace de la detección de necesidades concretas en el entorno de trabajo, combinando revisión documental y observación directa mediante cuaderno de campo.</p>
+    <div class="grid-2" style="margin-top:2rem">
+      <div class="glass reveal">
+        <div class="accent-line"></div>
+        <h3>Barreras detectadas</h3>
+        <ul style="margin-top:.9rem;color:var(--text-sec);line-height:1.9;padding-left:1.1rem">
+          <li>Falta de información adaptada</li>
+          <li>Sobreprotección y prejuicios del entorno</li>
+          <li>Dificultad para establecer relaciones sanas</li>
+          <li>Escasa comprensión del consentimiento</li>
+        </ul>
+      </div>
+      <div class="glass reveal">
+        <div class="accent-line"></div>
+        <h3>Necesidades priorizadas</h3>
+        <ul style="margin-top:.9rem;color:var(--text-sec);line-height:1.9;padding-left:1.1rem">
+          <li>Información clara sobre afectividad y sexualidad</li>
+          <li>Prevención de riesgos y trabajo del consentimiento</li>
+          <li>Fomento de relaciones igualitarias y respetuosas</li>
+          <li>Autoestima, expresión emocional y límites</li>
+          <li>Sensibilización de familias y profesionales</li>
+        </ul>
+      </div>
+    </div>
+    <div class="glass reveal" style="margin-top:1.2rem;background:rgba(196,106,76,.06);border-color:rgba(196,106,76,.15)">
+      <p style="color:var(--text-sec);line-height:1.7"><strong style="color:var(--text)">Problemática central:</strong> la dificultad para vivir la afectividad de forma libre, sana y segura puede derivar en relaciones desiguales, dependencia emocional y vulnerabilidad ante abusos.</p>
+    </div>
+  </div>
+</section>
 
-  <main class="deck">
-    <section class="slide active" data-slide="1">
-      <div class="content h-full flex items-center justify-center text-center">
-        <div>
-          <div class="hero-shape reveal"></div>
-          <p class="section-kicker reveal">Defensa del proyecto final de grado</p>
-          <h1 class="font-display reveal text-[clamp(2.6rem,6vw,5rem)] leading-none mt-4">
-            Bajo control,<br/>relaciones sin abuso
-          </h1>
-          <p class="reveal mt-5 text-[clamp(1.05rem,2vw,1.45rem)] text-[#66584c] max-w-[820px] mx-auto">
-            Educación afectivo-sexual para jóvenes con discapacidad intelectual
-          </p>
-          <div class="reveal mt-8 flex items-center justify-center gap-3 flex-wrap">
-            <span class="mini-pill">Monserrat Prieto Freixa</span>
-            <span class="mini-pill">ASPRODES Salamanca</span>
-          </div>
+<!-- ─── 2. FUNDAMENTACIÓN ─── -->
+<section id="fundamentacion">
+  <div class="blob-wrap">
+    <div class="blob" style="width:320px;height:320px;right:-60px;top:-80px;background:#eed5a5;opacity:.14;animation-duration:19s"></div>
+    <div class="blob" style="width:250px;height:250px;left:-50px;bottom:-50px;background:#cdd9d0;opacity:.17"></div>
+  </div>
+  <div class="inner">
+    <p class="kicker reveal">Justificación</p>
+    <h2 class="reveal">Fundamentación</h2>
+    <div class="grid-3" style="margin-top:2rem">
+      <div class="glass reveal">
+        <h3>Teórica</h3>
+        <p style="margin-top:.8rem;color:var(--text-sec);line-height:1.7">La sexualidad es parte del desarrollo integral y un derecho de todas las personas. El proyecto identifica como barreras el paternalismo, los prejuicios y la invisibilización de este colectivo.</p>
+      </div>
+      <div class="glass reveal">
+        <h3>Legal</h3>
+        <p style="margin-top:.8rem;color:var(--text-sec);line-height:1.7">Se sustenta en la Convención de la ONU, la Ley 26/2011, la Ley Orgánica 10/2022 y la Ley 1/2024 de Castilla y León.</p>
+      </div>
+      <div class="glass reveal">
+        <h3>Técnica</h3>
+        <p style="margin-top:.8rem;color:var(--text-sec);line-height:1.7">Surge desde ASPRODES como intervención socioeducativa y preventiva, con coordinación multiprofesional y derivación a recursos especializados cuando sea necesario.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 3. DESTINATARIOS ─── -->
+<section id="destinatarios">
+  <div class="blob-wrap">
+    <div class="blob" style="width:340px;height:340px;left:-70px;top:-70px;background:#eec7b0;opacity:.16;animation-duration:17s"></div>
+    <div class="blob" style="width:260px;height:260px;right:-50px;bottom:-50px;background:#cedbd2;opacity:.17;animation-duration:21s"></div>
+  </div>
+  <div class="inner">
+    <p class="kicker reveal">Contexto de intervención</p>
+    <h2 class="reveal">Localización y destinatarios</h2>
+    <p class="lead reveal" style="margin-top:1rem">La intervención se desarrolla en Salamanca, en un recurso de apoyo a personas con discapacidad intelectual con posibilidades de coordinación y derivación.</p>
+    <div class="grid-3" style="margin-top:2rem">
+      <div class="glass reveal">
+        <p class="num-badge">Destinatarios directos</p>
+        <p style="font-size:2rem;font-weight:800;color:var(--text)">10–12</p>
+        <p style="color:var(--text-sec);margin-top:.4rem;line-height:1.65">Jóvenes con discapacidad intelectual de 16 a 25 años usuarios del recurso.</p>
+      </div>
+      <div class="glass reveal">
+        <p class="num-badge">Destinatarios indirectos</p>
+        <p style="font-size:1.35rem;font-weight:800;color:var(--text);margin-top:.3rem">Familias y profesionales</p>
+        <p style="color:var(--text-sec);margin-top:.4rem;line-height:1.65">Su implicación refuerza el acompañamiento y la prevención.</p>
+      </div>
+      <div class="glass reveal">
+        <p class="num-badge">Contexto</p>
+        <p style="color:var(--text-sec);margin-top:.4rem;line-height:1.65">Salamanca cuenta con recursos sociales, sanitarios y entidades especializadas en discapacidad intelectual que favorecen la viabilidad del proyecto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 4. OBJETIVOS ─── -->
+<section id="objetivos">
+  <div class="blob-wrap">
+    <div class="blob" style="width:300px;height:300px;right:-50px;top:-60px;background:#efd3a8;opacity:.16;animation-duration:15s"></div>
+    <div class="blob" style="width:280px;height:280px;left:-60px;bottom:-70px;background:#d4dfd8;opacity:.17;animation-duration:23s"></div>
+  </div>
+  <div class="inner">
+    <p class="kicker reveal">Sentido de la intervención</p>
+    <h2 class="reveal">Objetivos</h2>
+    <div class="obj-main reveal">
+      <strong>Objetivo general:</strong> promover relaciones afectivo-sexuales sanas, seguras y respetuosas en jóvenes con discapacidad intelectual de entre 16 y 25 años, usuarios y usuarias de un recurso de apoyo en Salamanca.
+    </div>
+    <div class="grid-2" style="margin-top:1rem">
+      <div class="glass reveal">
+        <p style="color:var(--text-sec);line-height:1.7">Adquirir información adaptada sobre afectividad, sexualidad, consentimiento y límites personales.</p>
+      </div>
+      <div class="glass reveal">
+        <p style="color:var(--text-sec);line-height:1.7">Identificar conductas manipuladoras, relaciones desiguales y situaciones de riesgo.</p>
+      </div>
+      <div class="glass reveal">
+        <p style="color:var(--text-sec);line-height:1.7">Potenciar la autoestima, la seguridad personal y la expresión de emociones y límites.</p>
+      </div>
+      <div class="glass reveal">
+        <p style="color:var(--text-sec);line-height:1.7">Sensibilizar a familias y profesionales para favorecer un acompañamiento adecuado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── 5. METODOLOGÍA ─── -->
+<section id="metodologia">
+  <div class="blob-wrap">
+    <div class="blob" style="width:350px;height:350px;right:-70px;top:-60px;background:#e9bf9f;opacity:.15;animation-duration:18s"></div>
+    <div class="blob" style="width:270px;height:270px;left:-60px;bottom:-50px;background:#cfdcd3;opacity:.17;animation-duration:20s"></div>
+  </div>
+  <div class="inner">
+    <p class="kicker reveal">Cómo se trabaja</p>
+    <h2 class="reveal">Metodología y coordinación</h2>
+    <div class="grid-2" style="margin-top:2rem">
+      <div class="glass reveal">
+        <div class="accent-line"></div>
+        <h3>Principios metodológicos</h3>
+        <ul style="margin-top:.9rem;color:var(--text-sec);line-height:1.9;padding-left:1.1rem">
+          <li>Metodología activa y participativa</li>
+          <li>Trabajo grupal con momentos de reflexión individual</li>
+          <li>Adaptación al ritmo y necesidades del grupo</li>
+          <li>Contenidos presentados de forma clara y comprensible</li>
+          <li>Clima de confianza, respeto y autonomía</li>
+        </ul>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1.2rem">
+        <div class="glass reveal">
+          <p class="num-badge">Difusión</p>
+          <p style="color:var(--text-sec);margin-top:.4rem;line-height:1.65">Carteles, panfletos y redes sociales con lenguaje accesible dirigidos a usuarios, familias y profesionales.</p>
+        </div>
+        <div class="glass reveal">
+          <p class="num-badge">Coordinación</p>
+          <p style="color:var(--text-sec);margin-top:.4rem;line-height:1.65">Colaboración con el recurso de apoyo, el centro y entidades como Plena Inclusión, ADAVAS Salamanca, ARCA, Aviva, Insolamis, AFIM y Unidiversitas.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="slide" data-slide="2">
-      <div class="content h-full flex items-center">
-        <div class="w-full">
-          <p class="section-kicker reveal">Estructura</p>
-          <h2 class="font-display reveal text-[clamp(2rem,4vw,3.1rem)] mt-3">Recorrido de la exposición</h2>
-          <div class="grid md:grid-cols-2 gap-6 mt-10">
-            <div class="glass soft-card p-7 reveal">
-              <ul class="space-y-4 text-[1.03rem] text-[#66584c]">
-                <li><strong>1.</strong> Análisis de la realidad.</li>
-                <li><strong>2.</strong> Fundamentación del proyecto.</li>
-                <li><strong>3.</strong> Localización y destinatarios.</li>
-                <li><strong>4.</strong> Objetivos.</li>
-              </ul>
-            </div>
-            <div class="glass soft-card p-7 reveal">
-              <ul class="space-y-4 text-[1.03rem] text-[#66584c]">
-                <li><strong>5.</strong> Metodología y coordinación.</li>
-                <li><strong>6.</strong> Actividades principales.</li>
-                <li><strong>7.</strong> Temporalización y recursos.</li>
-                <li><strong>8.</strong> Evaluación final.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+<!-- ─── 6. ACTIVIDADES ─── -->
+<section id="actividades">
+  <div class="blob-wrap">
+    <div class="blob" style="width:310px;height:310px;left:-60px;top:-60px;background:#d6e1d9;opacity:.17;animation-duration:16s"></div>
+    <div class="blob" style="width:290px;height:290px;right:-60px;bottom:-60px;background:#eec9ad;opacity:.17;animation-duration:22s"></div>
+  </div>
+  <div class="inner">
+    <p class="kicker reveal">Desarrollo práctico</p>
+    <h2 class="reveal">Actividades</h2>
+    <div class="grid-3" style="margin-top:2rem">
+      <div class="glass reveal">
+        <p class="num-badge">Bloque 1 · Inicio</p>
+        <h3 style="margin-top:.3rem">Difusión e implicación</h3>
+        <p style="margin-top:.7rem;color:var(--text-sec);line-height:1.65">Presentación del proyecto, diagnóstico inicial y creación de un clima de confianza con el grupo.</p>
       </div>
-    </section>
-
-    <section class="slide" data-slide="3">
-      <div class="content h-full flex items-center">
-        <div class="grid md:grid-cols-2 gap-6 w-full items-stretch">
-          <div class="glass soft-card p-8 reveal">
-            <p class="section-kicker">Punto de partida</p>
-            <h2 class="font-display text-[clamp(2rem,4vw,3rem)] mt-3">Análisis de la realidad</h2>
-            <p class="mt-5 text-[#66584c] leading-8">
-              El proyecto surge ante la necesidad de trabajar la educación afectivo-sexual desde un enfoque preventivo y de derechos.
-            </p>
-            <p class="mt-4 text-[#66584c] leading-8">
-              La información se ha obtenido mediante revisión documental y observación directa en el contexto profesional.
-            </p>
-          </div>
-          <div class="glass soft-card p-8 reveal">
-            <p class="section-kicker">Necesidades detectadas</p>
-            <ul class="mt-5 space-y-4 text-[#66584c] leading-7">
-              <li>Información adaptada y comprensible.</li>
-              <li>Comprensión del consentimiento y los límites.</li>
-              <li>Identificación de relaciones sanas o de riesgo.</li>
-              <li>Apoyo para expresar emociones y decisiones.</li>
-            </ul>
-          </div>
-        </div>
+      <div class="glass reveal">
+        <p class="num-badge">Bloque 2 · Núcleo</p>
+        <h3 style="margin-top:.3rem">Consecución de objetivos</h3>
+        <p style="margin-top:.7rem;color:var(--text-sec);line-height:1.65">Trabajo sobre afectividad, sexualidad, consentimiento, límites, prevención y relaciones sanas.</p>
       </div>
-    </section>
-
-    <section class="slide" data-slide="4">
-      <div class="content h-full flex items-center">
-        <div class="w-full">
-          <p class="section-kicker">Problema</p>
-          <h2 class="font-display text-[clamp(2rem,4vw,3rem)] mt-3">Qué se quiere abordar</h2>
-          <div class="glass soft-card p-8 mt-8 reveal max-w-[980px]">
-            <p class="text-[#66584c] leading-8">
-              Muchas personas con discapacidad intelectual encuentran barreras para vivir su afectividad y sexualidad con autonomía, seguridad y respeto.
-            </p>
-            <p class="mt-4 text-[#66584c] leading-8">
-              Entre esas barreras destacan la sobreprotección, los prejuicios, la falta de apoyos adaptados y la dificultad para detectar manipulaciones o abusos.
-            </p>
-          </div>
-        </div>
+      <div class="glass reveal">
+        <p class="num-badge">Bloque 3 · Cierre</p>
+        <h3 style="margin-top:.3rem">Seguimiento y control</h3>
+        <p style="margin-top:.7rem;color:var(--text-sec);line-height:1.65">Refuerzo de aprendizajes, valoración de objetivos y elaboración de materiales de apoyo.</p>
       </div>
-    </section>
-
-    <section class="slide" data-slide="5">
-      <div class="content h-full flex items-center">
-        <div class="w-full">
-          <p class="section-kicker">Fundamentación</p>
-          <h2 class="font-display text-[clamp(2rem,4vw,3rem)] mt-3">Por qué es necesario</h2>
-          <div class="grid md:grid-cols-3 gap-6 mt-8">
-            <div class="glass soft-card p-7 reveal">
-              <h3 class="font-bold text-[1.16rem]">Teórica</h3>
-              <p class="mt-4 text-[#66584c] leading-7">La sexualidad forma parte del desarrollo integral y debe trabajarse desde el respeto, la educación y los derechos.</p>
-            </div>
-            <div class="glass soft-card p-7 reveal">
-              <h3 class="font-bold text-[1.16rem]">Legal</h3>
-              <p class="mt-4 text-[#66584c] leading-7">El proyecto se apoya en la Convención de la ONU, la normativa estatal y la ley autonómica de apoyo al proyecto de vida.</p>
-            </div>
-            <div class="glass soft-card p-7 reveal">
-              <h3 class="font-bold text-[1.16rem]">Técnica</h3>
-              <p class="mt-4 text-[#66584c] leading-7">La propuesta es viable porque parte de una necesidad real del centro y se basa en una intervención socioeducativa accesible.</p>
-            </div>
-          </div>
-        </div>
+    </div>
+    <p class="kicker reveal" style="margin-top:2.5rem;margin-bottom:1rem">Actividades destacadas</p>
+    <div class="grid-2">
+      <div class="glass reveal" style="display:flex;gap:1rem;align-items:flex-start">
+        <div style="min-width:10px;height:10px;border-radius:50%;background:var(--accent1);margin-top:.35rem"></div>
+        <div><strong>Mural inicial y grupo focal</strong><br><span style="color:var(--text-sec);font-size:.94rem">Exploración de conocimientos previos y punto de partida del grupo.</span></div>
       </div>
-    </section>
-
-    <section class="slide" data-slide="6">
-      <div class="content h-full flex items-center">
-        <div class="grid md:grid-cols-2 gap-6 w-full items-stretch">
-          <div class="glass soft-card p-8 reveal">
-            <p class="section-kicker">Contexto</p>
-            <h2 class="font-display text-[clamp(2rem,4vw,3rem)] mt-3">Localización</h2>
-            <p class="mt-5 text-[#66584c] leading-8">
-              La intervención se desarrolla en Salamanca, en un recurso de atención a personas con discapacidad intelectual.
-            </p>
-            <p class="mt-4 text-[#66584c] leading-8">
-              La ciudad cuenta con recursos sociales y sanitarios que facilitan la coordinación y, si hace falta, la derivación.
-            </p>
-          </div>
-          <div class="glass soft-card p-8 reveal">
-            <p class="section-kicker">Destinatarios</p>
-            <ul class="mt-5 space-y-4 text-[#66584c] leading-7">
-              <li><strong>Directos:</strong> jóvenes de 16 a 25 años con discapacidad intelectual.</li>
-              <li><strong>Indirectos:</strong> familias y profesionales del entorno cercano.</li>
-              <li>Grupo mixto, con necesidades de apoyo en consentimiento, límites y relaciones sanas.</li>
-            </ul>
-          </div>
-        </div>
+      <div class="glass reveal" style="display:flex;gap:1rem;align-items:flex-start">
+        <div style="min-width:10px;height:10px;border-radius:50%;background:var(--accent2);margin-top:.35rem"></div>
+        <div><strong>Afectividad, sexualidad y consentimiento</strong><br><span style="color:var(--text-sec);font-size:.94rem">Actividad central para trabajar conceptos clave de forma accesible.</span></div>
       </div>
-    </section>
-
-    <section class="slide" data-slide="7">
-      <div class="content h-full flex items-center">
-        <div class="w-full">
-          <p class="section-kicker">Sentido de la intervención</p>
-          <h2 class="font-display text-[clamp(2rem,4vw,3rem)] mt-3">Objetivos</h2>
-          <div class="glass soft-card p-8 mt-8 reveal">
-            <p class="text-sm uppercase tracking-[.18em] text-[#9a8e82]">Objetivo general</p>
-            <p class="mt-4 text-[1.4rem] leading-9 text-[#2f261f]">
-              Promover relaciones afectivo-sexuales sanas, seguras y respetuosas.
-            </p>
-          </div>
-          <div class="grid md:grid-cols-2 gap-5 mt-5">
-            <div class="glass soft-card p-6 reveal">
-              <p class="text-[#66584c]">Ofrecer información clara sobre afectividad, sexualidad, consentimiento y límites.</p>
-            </div>
-            <div class="glass soft-card p-6 reveal">
-              <p class="text-[#66584c]">Favorecer la detección de conductas manipuladoras y situaciones de riesgo.</p>
-            </div>
-            <div class="glass soft-card p-6 reveal">
-              <p class="text-[#66584c]">Potenciar autoestima, seguridad y expresión de deseos y emociones.</p>
-            </div>
-            <div class="glass soft-card p-6 reveal">
-              <p class="text-[#66584c]">Sensibilizar al entorno cercano para mejorar el acompañamiento y la prevención.</p>
-            </div>
-          </div>
-        </div>
+      <div class="glass reveal" style="display:flex;gap:1rem;align-items:flex-start">
+        <div style="min-width:10px;height:10px;border-radius:50%;background:var(--accent3);margin-top:.35rem"></div>
+        <div><strong>Semáforo de conductas</strong><br><span style="color:var(--text-sec);font-size:.94rem">Clasifica situaciones como adecuadas, dudosas o de riesgo.</span></div>
       </div>
-    </section>
-
-    <section class="slide" data-slide="8">
-      <div class="content h-full flex items-center">
-        <div class="grid md:grid-cols-2 gap-6 w-full items-stretch">
-          <div class="glass soft-card p-8 reveal">
-            <p class="section-kicker">Cómo se va a intervenir</p>
-            <h2 class="font-display text-[clamp(2rem,4vw,3rem)] mt-3">Metodología</h2>
-            <ul class="mt-5 space-y-4 text-[#66584c] leading-8">
-              <li>Activa, participativa y flexible.</li>
-              <li>Trabajo grupal con momentos de reflexión individual.</li>
-              <li>Lenguaje sencillo, apoyos visuales y clima de confianza.</li>
-              <li>Adaptación al ritmo y necesidades del grupo.</li>
-            </ul>
-          </div>
-          <div class="grid gap-5">
-            <div class="glass soft-card p-6 reveal">
-              <p class="text-sm uppercase tracking-[.18em] text-[#9a8e82]">Difusión</p>
-              <p class="mt-3 text-[#66584c]">Carteles, panfletos y redes sociales con información clara y accesible.</p>
-            </div>
-            <div class="glass soft-card p-6 reveal">
-              <p class="text-sm uppercase tracking-[.18em] text-[#9a8e82]">Coordinación</p>
-              <p class="mt-3 text-[#66584c]">Trabajo con el centro y con recursos especializados como ADAVAS Salamanca.</p>
-            </div>
-          </div>
-        </div>
+      <div class="glass reveal" style="display:flex;gap:1rem;align-items:flex-start">
+        <div style="min-width:10px;height:10px;border-radius:50%;background:var(--accent1);margin-top:.35rem"></div>
+        <div><strong>Mi forma de sentir y decir no</strong><br><span style="color:var(--text-sec);font-size:.94rem">Expresión emocional, límites personales y capacidad de pedir ayuda.</span></div>
       </div>
-    </section>
-
-    <section class="slide" data-slide="9">
-      <div class="content h-full flex items-center">
-        <div class="w-full">
-          <p class="section-kicker">Desarrollo práctico</p>
-          <h2 class="font-display text-[clamp(2rem,4vw,3rem)] mt-3">Actividades principales</h2>
-          <div class="grid md:grid-cols-3 gap-6 mt-8">
-            <div class="glass soft-card p-7 reveal">
-              <h3 class="font-bold text-[1.16rem]">Fase inicial</h3>
-              <p class="mt-4 text-[#66584c] leading-7">Mural inicial y grupo focal para conocer ideas previas y necesidades.</p>
-            </div>
-            <div class="glass soft-card p-7 reveal">
-              <h3 class="font-bold text-[1.16rem]">Bloque central</h3>
-              <p class="mt-4 text-[#66584c] leading-7">Afectividad, consentimiento, semáforo de conductas, decir no y relaciones sanas.</p>
-            </div>
-            <div class="glass soft-card p-7 reveal">
-              <h3 class="font-bold text-[1.16rem]">Cierre</h3>
-              <p class="mt-4 text-[#66584c] leading-7">Mito o realidad, decálogo de buenas prácticas y material de apoyo final.</p>
-            </div>
-          </div>
-        </div>
+      <div class="glass reveal" style="display:flex;gap:1rem;align-items:flex-start">
+        <div style="min-width:10px;height:10px;border-radius:50%;background:var(--accent2);margin-top:.35rem"></div>
+        <div><strong>Relaciones sanas: mito o realidad</strong><br><span style="color:var(--text-sec);font-size:.94rem">Reflexión y consolidación de aprendizajes sobre vínculos igualitarios.</span></div>
       </div>
-    </section>
-
-    <section class="slide" data-slide="10">
-      <div class="content h-full flex items-center">
-        <div class="grid md:grid-cols-2 gap-6 w-full items-stretch">
-          <div class="glass soft-card p-8 reveal">
-            <p class="section-kicker">Planificación</p>
-            <h2 class="font-display text-[clamp(2rem,4vw,3rem)] mt-3">Temporalización</h2>
-            <div class="mt-6 space-y-5 text-[#66584c]">
-              <p><strong>Octubre:</strong> contacto previo y difusión del proyecto.</p>
-              <p><strong>Semana siguiente:</strong> actividades iniciales.</p>
-              <p><strong>Periodicidad semanal:</strong> actividades centrales.</p>
-              <p><strong>Fase final:</strong> trío de buenas prácticas y evaluación final.</p>
-            </div>
-          </div>
-          <div class="glass soft-card p-8 reveal">
-            <p class="section-kicker">Idea clave</p>
-            <p class="mt-5 text-[#66584c] leading-8">
-              La secuencia está pensada para ir de lo general a lo específico, reforzar aprendizajes y cerrar con un recurso útil para recordar lo trabajado.
-            </p>
-          </div>
-        </div>
+      <div class="glass reveal" style="display:flex;gap:1rem;align-items:flex-start">
+        <div style="min-width:10px;height:10px;border-radius:50%;background:var(--accent3);margin-top:.35rem"></div>
+        <div><strong>Decálogo y tríptico personal</strong><br><span style="color:var(--text-sec);font-size:.94rem">Elaboración de materiales de apoyo y cierre de la intervención.</span></div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <section class="slide" data-slide="11">
-      <div class="content h-full flex items-center">
-        <div class="grid md:grid-cols-2 gap-6 w-full items-stretch">
-          <div class="glass soft-card p-8 reveal">
-            <p class="section-kicker">Viabilidad</p>
-            <h2 class="font-display text-[clamp(2rem,4vw,3rem)] mt-3">Recursos</h2>
-            <ul class="mt-5 space-y-4 text-[#66584c] leading-8">
-              <li><strong>Humanos:</strong> integradora social, equipo del centro y coordinación con ADAVAS.</li>
-              <li><strong>Materiales:</strong> papel, cartulinas, tarjetas, pictogramas, fichas y carteles.</li>
-              <li><strong>Espaciales:</strong> sala tranquila, aula amplia y espacios accesibles del centro.</li>
-              <li><strong>Económicos:</strong> 100 € para fungible y 24 € para imprevistos.</li>
-            </ul>
-          </div>
-          <div class="glass soft-card p-8 reveal">
-            <p class="section-kicker">Apoyo material</p>
-            <p class="mt-5 text-[#66584c] leading-8">
-              La mayor parte de los medios se cubre con recursos ordinarios del centro, por lo que el proyecto resulta asumible y realista.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- ─── 7. PLANIFICACIÓN Y RECURSOS ─── -->
+<section id="planificacion">
+  <div class="blob-wrap">
+    <div class="blob" style="width:330px;height:330px;right:-60px;top:-60px;background:#edd0a6;opacity:.14;animation-duration:17s"></div>
+    <div class="blob" style="width:270px;height:270px;left:-50px;bottom:-50px;background:#c8d8cf;opacity:.16;animation-duration:24s"></div>
+  </div>
+  <div class="inner">
+    <p class="kicker reveal">Organización</p>
+    <h2 class="reveal">Planificación y recursos</h2>
 
-    <section class="slide" data-slide="12">
-      <div class="content h-full flex items-center">
-        <div class="w-full">
-          <p class="section-kicker">Seguimiento</p>
-          <h2 class="font-display text-[clamp(2rem,4vw,3rem)] mt-3">Evaluación</h2>
-          <div class="grid md:grid-cols-3 gap-5 mt-8">
-            <div class="glass soft-card p-7 reveal">
-              <h3 class="font-bold text-[1.16rem]">Inicial</h3>
-              <p class="mt-3 text-[#66584c] leading-7">Parte del análisis de la realidad para ajustar la intervención al grupo.</p>
+    <div class="grid-2" style="margin-top:2rem">
+      <div>
+        <p class="kicker reveal" style="margin-bottom:.8rem">Temporalización</p>
+        <div class="glass reveal">
+          <div class="timeline">
+            <div class="tl-item">
+              <p class="tl-label">Octubre · inicio</p>
+              <p class="tl-text">Contacto con ADAVAS y difusión a usuarios, familias y profesionales.</p>
             </div>
-            <div class="glass soft-card p-7 reveal">
-              <h3 class="font-bold text-[1.16rem]">Continua</h3>
-              <p class="mt-3 text-[#66584c] leading-7">Valora participación, comprensión, adecuación de actividades y posibles ajustes.</p>
+            <div class="tl-item">
+              <p class="tl-label">Semanas 1–2</p>
+              <p class="tl-text">Actividades iniciales: mural y grupo focal.</p>
             </div>
-            <div class="glass soft-card p-7 reveal">
-              <h3 class="font-bold text-[1.16rem]">Final</h3>
-              <p class="mt-3 text-[#66584c] leading-7">Comprueba si se han alcanzado los objetivos y si el material de apoyo resulta útil.</p>
+            <div class="tl-item">
+              <p class="tl-label">Periodicidad semanal</p>
+              <p class="tl-text">Desarrollo de las actividades para la consecución de objetivos.</p>
             </div>
-          </div>
-          <div class="grid md:grid-cols-2 gap-5 mt-5">
-            <div class="glass soft-card p-6 reveal">
-              <p class="text-sm uppercase tracking-[.18em] text-[#9a8e82]">Indicadores</p>
-              <p class="mt-3 text-[#66584c]">Participación, comprensión, satisfacción y capacidad para identificar conceptos clave.</p>
-            </div>
-            <div class="glass soft-card p-6 reveal">
-              <p class="text-sm uppercase tracking-[.18em] text-[#9a8e82]">Instrumentos</p>
-              <p class="mt-3 text-[#66584c]">“Valoramos con expresiones” y cuaderno de campo.</p>
+            <div class="tl-item">
+              <p class="tl-label">Fase final</p>
+              <p class="tl-text">Tríptico individual, decálogo y evaluación final.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </main>
 
-  <script>
-    const slides = [...document.querySelectorAll('.slide')];
-    const menuToggle = document.getElementById('menuToggle');
-    const menuLinks = document.getElementById('menuLinks');
-    const buttons = [...menuLinks.querySelectorAll('button')];
-    let current = 1;
+      <div>
+        <p class="kicker reveal" style="margin-bottom:.8rem">Recursos</p>
+        <div style="display:flex;flex-direction:column;gap:1rem">
+          <div class="glass reveal">
+            <p class="num-badge">Humanos</p>
+            <p style="color:var(--text-sec);margin-top:.3rem;line-height:1.65">Integrador/a social, personal del centro y coordinación con ADAVAS.</p>
+          </div>
+          <div class="glass reveal">
+            <p class="num-badge">Materiales y espaciales</p>
+            <p style="color:var(--text-sec);margin-top:.3rem;line-height:1.65">Papel, cartulinas, pictogramas, ordenador, proyector y sala tranquila del centro.</p>
+          </div>
+          <div class="glass reveal">
+            <p class="num-badge">Financieros</p>
+            <p style="color:var(--text-sec);margin-top:.3rem;line-height:1.65">124 € en total (100 € fungible + 24 € imprevistos). El resto se cubre con recursos ordinarios de ASPRODES.</p>
+            <div style="margin-top:.9rem">
+              <div style="display:flex;justify-content:space-between;font-size:.85rem;color:var(--text-sec);margin-bottom:.4rem"><span>Material fungible</span><span>100 €</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="81"></div></div>
+              <div style="display:flex;justify-content:space-between;font-size:.85rem;color:var(--text-sec);margin:.55rem 0 .4rem"><span>Imprevistos</span><span>24 €</span></div>
+              <div class="bar-track"><div class="bar-fill" data-width="19"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    function reveal(slide) {
-      slide.querySelectorAll('.reveal').forEach((el, i) => {
-        el.style.transition = 'none';
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(18px)';
-        el.offsetHeight;
-        el.style.transition = `opacity .45s ease ${i * .06}s, transform .45s ease ${i * .06}s`;
-        el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
-      });
+<!-- ─── 8. EVALUACIÓN ─── -->
+<section id="evaluacion">
+  <div class="blob-wrap">
+    <div class="blob" style="width:330px;height:330px;left:-60px;top:-70px;background:#d5e0d8;opacity:.17;animation-duration:16s"></div>
+    <div class="blob" style="width:290px;height:290px;right:-60px;bottom:-60px;background:#efc8ae;opacity:.16;animation-duration:21s"></div>
+  </div>
+  <div class="inner">
+    <p class="kicker reveal">Seguimiento del proyecto</p>
+    <h2 class="reveal">Evaluación</h2>
+    <div class="grid-3" style="margin-top:2rem">
+      <div class="glass reveal">
+        <h3>Inicial</h3>
+        <p style="margin-top:.8rem;color:var(--text-sec);line-height:1.65">Basada en el análisis de la realidad para conocer necesidades y características del grupo antes de iniciar la intervención.</p>
+      </div>
+      <div class="glass reveal">
+        <h3>Continua</h3>
+        <p style="margin-top:.8rem;color:var(--text-sec);line-height:1.65">Se lleva a cabo en cada sesión para valorar la participación, la comprensión y la adecuación de actividades.</p>
+      </div>
+      <div class="glass reveal">
+        <h3>Final</h3>
+        <p style="margin-top:.8rem;color:var(--text-sec);line-height:1.65">Valora globalmente el desarrollo del proyecto y el grado de consecución de los objetivos planteados.</p>
+      </div>
+    </div>
+    <div class="grid-2" style="margin-top:1.2rem">
+      <div class="glass reveal">
+        <p class="num-badge">Indicadores principales</p>
+        <p style="color:var(--text-sec);margin-top:.4rem;line-height:1.7">Participación, comprensión de contenidos, adecuación de la metodología, satisfacción del grupo e identificación de conceptos clave.</p>
+      </div>
+      <div class="glass reveal">
+        <p class="num-badge">Instrumentos</p>
+        <p style="color:var(--text-sec);margin-top:.4rem;line-height:1.7"><strong style="color:var(--text)">Valoramos con expresiones</strong> y <strong style="color:var(--text)">cuaderno de campo</strong> como herramientas principales de recogida de información.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <strong>Bajo control: relaciones sin abuso</strong><br>
+  Monserrat Prieto Freixa · ASPRODES · Salamanca
+</footer>
+
+<!-- scroll-to-top -->
+<button id="scrolltop" aria-label="Volver arriba">↑</button>
+
+<script>
+  // ── hamburger ──
+  const hamBtn  = document.getElementById('hamBtn');
+  const navMenu = document.getElementById('navMenu');
+  hamBtn.addEventListener('click', () => {
+    const open = navMenu.classList.toggle('open');
+    hamBtn.classList.toggle('open', open);
+    hamBtn.setAttribute('aria-expanded', open);
+  });
+  // close on link click
+  navMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navMenu.classList.remove('open');
+      hamBtn.classList.remove('open');
+      hamBtn.setAttribute('aria-expanded', false);
+    });
+  });
+  // close on outside click
+  document.addEventListener('click', e => {
+    if (!navMenu.contains(e.target) && !hamBtn.contains(e.target)) {
+      navMenu.classList.remove('open');
+      hamBtn.classList.remove('open');
+      hamBtn.setAttribute('aria-expanded', false);
     }
+  });
 
-    function goTo(n) {
-      slides[current - 1].classList.remove('active');
-      current = n;
-      slides[current - 1].classList.add('active');
-      buttons.forEach(b => b.classList.toggle('active', Number(b.dataset.slide) === current));
-      reveal(slides[current - 1]);
-      menuLinks.classList.remove('open');
-      menuToggle.setAttribute('aria-expanded', 'false');
-    }
-
-    buttons.forEach(btn => btn.addEventListener('click', () => goTo(Number(btn.dataset.slide))));
-    menuToggle.addEventListener('click', () => {
-      const open = menuLinks.classList.toggle('open');
-      menuToggle.setAttribute('aria-expanded', String(open));
+  // ── active nav link on scroll ──
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = navMenu.querySelectorAll('a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const link = navMenu.querySelector(`a[href="#${entry.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
     });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => observer.observe(s));
 
-    document.addEventListener('keydown', e => {
-      if (e.key === 'ArrowRight') goTo(current === slides.length ? 1 : current + 1);
-      if (e.key === 'ArrowLeft') goTo(current === 1 ? slides.length : current - 1);
+  // ── reveal on scroll ──
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 60);
+        revealObs.unobserve(entry.target);
+      }
     });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
-    let touchStartX = 0;
-    document.addEventListener('touchstart', e => touchStartX = e.touches[0].clientX);
-    document.addEventListener('touchend', e => {
-      const diff = touchStartX - e.changedTouches[0].clientX;
-      if (Math.abs(diff) > 60) goTo(diff > 0 ? (current === slides.length ? 1 : current + 1) : (current === 1 ? slides.length : current - 1));
+  // ── animate bars when visible ──
+  const barObs = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.bar-fill').forEach((bar, i) => {
+          setTimeout(() => { bar.style.width = bar.dataset.width + '%'; }, i * 150);
+        });
+        barObs.unobserve(entry.target);
+      }
     });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.glass').forEach(g => {
+    if (g.querySelector('.bar-fill')) barObs.observe(g);
+  });
 
-    reveal(slides[0]);
-  </script>
+  // ── scroll-to-top ──
+  const scrollBtn = document.getElementById('scrolltop');
+  window.addEventListener('scroll', () => {
+    scrollBtn.classList.toggle('show', window.scrollY > 500);
+  });
+  scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
 </body>
 </html>
